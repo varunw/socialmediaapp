@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "postinstall": "prisma generate",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -26,7 +27,7 @@
     "next-auth": "^4.24.5",
     "next-nprogress-bar": "^2.1.2",
     "pino-pretty": "^10.3.1",
-    "prisma": "^5.10.2",
+    "@prisma/client": "latest",
     "react": "^18",
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",
@@ -41,6 +42,7 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
+    "prisma": "latest",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
