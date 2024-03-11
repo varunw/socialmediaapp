@@ -13,11 +13,10 @@ import Image from "next/image";
 import React from "react";
 
 async function Page({ params }: { params: { username: string } }) {
-   const session = await getServerSession(authOptions);
+  const session = await getServerSession(authOptions);
   const data = await db.user.findUnique({
     where: {
       username: params.username,
-      
     },
   });
   return (
@@ -45,17 +44,17 @@ async function Page({ params }: { params: { username: string } }) {
           <span className="font-bold">Email:</span> {data?.email}
         </div>
       </div> */}
-      <div className="bg-gray-100 p-4 rounded-lg absolute top-[120px] right-4"> 
+      <div className="bg-gray-100 p-4 rounded-lg absolute top-[120px] right-4">
         <div className="flex flex-row p-3 gap-1">
           <Image
-            src={session?.user.image as string}
+            src={data?.image as string}
             height={20}
             width={30}
             alt="profile"
             className="rounded-full"
           />
 
-          <div className="text-xl font-bold mb-2">{session?.user.username}</div>
+          <div className="text-xl font-bold mb-2">{data?.username}</div>
         </div>
         <div className="flex justify-between">
           <div className="flex items-center ">
