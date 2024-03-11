@@ -12,7 +12,7 @@ function Likedby({ _postId }: { _postId: String }) {
         <p>Loading..</p>
       ) : (
         data?.map((Likedby: any) => (
-          <div className="">
+          <div className="" key={Likedby}>
             <p>{Likedby}</p>
           </div>
         ))

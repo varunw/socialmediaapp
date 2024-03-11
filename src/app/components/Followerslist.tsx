@@ -32,7 +32,7 @@ function Followerslist({ _userAddress }: { _userAddress: string }) {
               <p>Loading..</p>
             ) : (
               data?.map((followers: any) => (
-                <div className="">
+                <div className="" key={followers}>
                   <p>{followers}</p>
                 </div>
               ))

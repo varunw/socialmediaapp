@@ -56,7 +56,7 @@ function Comments({ _postId }: { _postId: String }) {
             <p>Loading..</p>
           ) : (
             allcomments.data?.map((comment: any) => (
-              <div className="">
+              <div className="" key={comment.username}>
                 <p>{comment.username}</p>
                 <p>{comment.comment}</p>
               </div>

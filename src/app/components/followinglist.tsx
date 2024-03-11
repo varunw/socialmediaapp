@@ -34,7 +34,7 @@ function Followinglist({ _userAddress }: { _userAddress: string }) {
               <p>Loading..</p>
             ) : (
               data?.map((following: any) => (
-                <div className="">
+                <div className="" key={following}>
                   <p>{following}</p>
                 </div>
               ))
