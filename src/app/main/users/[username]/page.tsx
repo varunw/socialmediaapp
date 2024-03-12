@@ -24,7 +24,9 @@ async function Page({ params }: { params: { username: string } }) {
       <Navvbar />
       <Leftsidebar />
       <div className=" flex items-center justify-center pt-[10rem] absolute right-14 top-[120px] ">
-        <Follow _following={data?.address as string} />
+        {params.username != session?.user.username && (
+          <Follow _following={data?.address as string} />
+        )}
       </div>
 
       {/* <div className="flex items-centre justify-center text-white flex-col absolute right-3 top-[200px] border-1">
