@@ -87,9 +87,7 @@ function UserPosts() {
                         </Button>
                       </DialogTrigger>
                       <DialogContent className="sm:max-w-[425px]">
-                        <DialogHeader>
-                          <DialogTitle>Edit profile</DialogTitle>
-                        </DialogHeader>
+                        <DialogHeader></DialogHeader>
                         <div className="grid gap-4 py-4">
                           <Comments _postId={items.postId} />
                         </div>
@@ -101,11 +99,9 @@ function UserPosts() {
                   </div>
                   <Dialog>
                     <DialogTrigger asChild>
-                      
-                        <p className="text-gray-400 cursor-pointer">
-                          Likes: {parseInt(items.likes, 16)}
-                        </p>
-                   
+                      <p className="text-gray-400 cursor-pointer">
+                        Likes: {parseInt(items.likes, 16)}
+                      </p>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[425px]">
                       <DialogHeader>
@@ -114,15 +110,11 @@ function UserPosts() {
                       <div className="grid gap-4 py-4">
                         <Likedby _postId={items.postId} />
                       </div>
-                      <DialogFooter>
-                        
-                      </DialogFooter>
+                      <DialogFooter></DialogFooter>
                     </DialogContent>
                   </Dialog>
                 </div>
-                <div className="">
-                
-                </div>
+                <div className=""></div>
                 <div className="p-4">
                   <p className="text-white">{items.content}</p>
                 </div>
@@ -202,7 +194,7 @@ function UserPosts() {
     //                 </DialogTrigger>
     //                 <DialogContent className="sm:max-w-[425px]">
     //                   <DialogHeader>
-    //                     <DialogTitle>Edit profile</DialogTitle>
+    //                     <DialogTitle> profile</DialogTitle>
     //                   </DialogHeader>
     //                   <div className="grid gap-4 py-4">
     //                     <Comments _postId={items.postId} />
@@ -333,7 +325,7 @@ function UserPosts() {
     //                 </DialogTrigger>
     //                 <DialogContent className="sm:max-w-[425px]">
     //                   <DialogHeader>
-    //                     <DialogTitle>Edit profile</DialogTitle>
+    //                     
     //                   </DialogHeader>
     //                   <div className="grid gap-4 py-4 ">
     //                     <Comments _postId={items.postId} />

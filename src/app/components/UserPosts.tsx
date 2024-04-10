@@ -85,7 +85,7 @@ function UserPost({ address }: { address: string }) {
                       </DialogTrigger>
                       <DialogContent className="sm:max-w-[425px]">
                         <DialogHeader>
-                          <DialogTitle>Edit profile</DialogTitle>
+                          
                         </DialogHeader>
                         <div className="grid gap-4 py-4">
                           <Comments _postId={items.postId} />
@@ -168,7 +168,7 @@ function UserPost({ address }: { address: string }) {
     //                 </DialogTrigger>
     //                 <DialogContent className="sm:max-w-[425px]">
     //                   <DialogHeader>
-    //                     <DialogTitle>Edit profile</DialogTitle>
+    //                   
     //                   </DialogHeader>
     //                   <div className="grid gap-4 py-4 ">
     //                     <Comments _postId={items.postId} />
