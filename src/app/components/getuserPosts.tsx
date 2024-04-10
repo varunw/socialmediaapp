@@ -92,7 +92,7 @@ function UserPosts() {
                           <Comments _postId={items.postId} />
                         </div>
                         <DialogFooter>
-                          <Button type="submit">Save changes</Button>
+                          
                         </DialogFooter>
                       </DialogContent>
                     </Dialog>
