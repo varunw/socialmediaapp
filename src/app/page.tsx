@@ -12,11 +12,11 @@ export default async function Home() {
       <main className="flex flex-col p-2 justify-between">
         <NavBar />
         <Hero />
-        {/* <div>
+        <div>
           hello
           {userName} 
           {username}
-        </div> */}
+        </div>
       </main>
     </>
   );
